@@ -10,7 +10,8 @@
 		D01BBF82298252220075DFE8 /* DoubleClickUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BBF81298252220075DFE8 /* DoubleClickUpApp.swift */; };
 		D01BBF84298252220075DFE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BBF83298252220075DFE8 /* ContentView.swift */; };
 		D01BBF86298252250075DFE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01BBF85298252250075DFE8 /* Assets.xcassets */; };
-		D01BBF89298252250075DFE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01BBF88298252250075DFE8 /* Preview Assets.xcassets */; };
+		D01BBF912982535F0075DFE8 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BBF902982535F0075DFE8 /* WebView.swift */; };
+		D01BBF932982574A0075DFE8 /* LeftSideRightSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BBF922982574A0075DFE8 /* LeftSideRightSide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,8 +19,9 @@
 		D01BBF81298252220075DFE8 /* DoubleClickUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleClickUpApp.swift; sourceTree = "<group>"; };
 		D01BBF83298252220075DFE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D01BBF85298252250075DFE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D01BBF88298252250075DFE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D01BBF8A298252250075DFE8 /* DoubleClickUp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DoubleClickUp.entitlements; sourceTree = "<group>"; };
+		D01BBF902982535F0075DFE8 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		D01BBF922982574A0075DFE8 /* LeftSideRightSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideRightSide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,19 +56,12 @@
 			children = (
 				D01BBF81298252220075DFE8 /* DoubleClickUpApp.swift */,
 				D01BBF83298252220075DFE8 /* ContentView.swift */,
+				D01BBF902982535F0075DFE8 /* WebView.swift */,
+				D01BBF922982574A0075DFE8 /* LeftSideRightSide.swift */,
 				D01BBF85298252250075DFE8 /* Assets.xcassets */,
 				D01BBF8A298252250075DFE8 /* DoubleClickUp.entitlements */,
-				D01BBF87298252250075DFE8 /* Preview Content */,
 			);
 			path = DoubleClickUp;
-			sourceTree = "<group>";
-		};
-		D01BBF87298252250075DFE8 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				D01BBF88298252250075DFE8 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +122,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D01BBF89298252250075DFE8 /* Preview Assets.xcassets in Resources */,
 				D01BBF86298252250075DFE8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +133,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D01BBF912982535F0075DFE8 /* WebView.swift in Sources */,
+				D01BBF932982574A0075DFE8 /* LeftSideRightSide.swift in Sources */,
 				D01BBF84298252220075DFE8 /* ContentView.swift in Sources */,
 				D01BBF82298252220075DFE8 /* DoubleClickUpApp.swift in Sources */,
 			);
@@ -269,7 +265,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DoubleClickUp/Preview Content\"";
 				DEVELOPMENT_TEAM = YYM4Z6MU8F;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -280,7 +275,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.trans-cosmos.DoubleClickUp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsubuzaki.DoubleClickUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -296,7 +291,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DoubleClickUp/Preview Content\"";
 				DEVELOPMENT_TEAM = YYM4Z6MU8F;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -307,7 +301,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.trans-cosmos.DoubleClickUp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsubuzaki.DoubleClickUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
